@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: transparent;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000000;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: local('Spartan'),
+         url('../src/fonts/spartan-cufonfonts/Spartan-Black.ttf') format('ttf')
+}

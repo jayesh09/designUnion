@@ -1,0 +1,34 @@
+.appbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.appBarContent {
+    width: 750px;
+    height: 63px;
+    background: linear-gradient(45deg, #353535, transparent);
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.appBarContentItem{
+    color:#ffffff;
+    background:transparent;
+    font-size: 20px;
+}
+
+.appBarContentItem:hover{
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, #FF7ECE, #473FFF);
+    border-image-slice: 1;
+}
+
+.appBarbutton {
+    border-width: 0;
+}
