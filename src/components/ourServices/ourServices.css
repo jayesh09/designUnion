@@ -1,0 +1,120 @@
+.ourSection{
+    position: relative;
+    top: -8rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.sectionHeader{
+    display: flex;
+    justify-content: center;
+    font-size: 4.5rem;
+}
+
+.boxes{
+    top: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.box{
+    height: 23rem;
+    width: 24rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 5px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(180deg, #5A268E 0%, #B7198B 48%, #3B8491 100%);
+    border-image-slice: 1;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    padding-top: 2rem;
+}
+
+.box #svgDiv{
+    width: 5rem;
+    height: 5rem;
+    grid-column: 2/3;
+    grid-row: 1/1;
+    position: relative;
+    left: 5.5rem;
+}
+
+.box span{
+    grid-column: 2/3;
+    grid-row: 2/2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.box #listDiv{
+    grid-column: 2/3;
+    grid-row: 3/3;
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1rem;
+}
+
+ul{
+    list-style: none;
+    align-items: center;
+}
+
+li{
+    justify-content: center;
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+@keyframes traverse1stEllipse {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(2.8rem) translateY(0);
+    }
+    50% {
+        transform: translateX(2.8rem) translateY(2.8rem);
+    }
+    75% {
+        transform: translateX(0) translateY(2.8rem);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+#upEllipse {
+    animation: traverse1stEllipse 3s linear infinite;
+}
+
+#downEllipse{
+    animation: traverse2ndEllipse 3s linear infinite;
+}
+
+@keyframes traverse2ndEllipse {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(-2.8rem) translateY(0);
+    }
+    50% {
+        transform: translateX(-2.8rem) translateY(-2.8rem);
+    }
+    75% {
+        transform: translateX(0) translateY(-2.8rem);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+

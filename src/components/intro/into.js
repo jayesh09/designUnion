@@ -1,6 +1,5 @@
 import React from "react";
 import './intro.css';
-import robo from '../../assets/introSectionImg.png'
 const Intro = () => {
     return (
         <section className="intro">
